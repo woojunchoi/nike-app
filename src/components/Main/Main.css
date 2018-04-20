@@ -15,3 +15,6 @@
     width:50%;
 }
 
+.search input {
+    border:2px solid black;
+}

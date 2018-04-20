@@ -3,44 +3,44 @@ import axios from 'axios'
 
 //action types
 export const SAVE_DATA = 'SAVE_DATA'
-export const ADD_CART ='ADD_CART'
-export const CHANGE_BORDER ='CHANGE_BORDER'
-export const CHANGE_VIEW ='CHANGE_VIEW'
-export const DELETE_ITEM ='DELETE_ITEM'
+export const ADD_CART = 'ADD_CART'
+export const CHANGE_BORDER = 'CHANGE_BORDER'
+export const CHANGE_VIEW = 'CHANGE_VIEW'
+export const DELETE_ITEM = 'DELETE_ITEM'
 export const SEARCH_SHOES = 'SEARCH_SHOES';
 
 
 //actions
 export const receiveData = (data) => {
     return {
-    type:SAVE_DATA,
-    data
+        type: SAVE_DATA,
+        data
     }
 }
 
 export const changeView = () => {
     return {
-    type:CHANGE_VIEW
+        type: CHANGE_VIEW
     }
 }
 
 export const addCart = (index) => {
     return {
-        type:ADD_CART,
+        type: ADD_CART,
         index
     }
 }
 
 export const searchShoes = (value) => {
     return {
-      type: SEARCH_SHOES,
-      value,
+        type: SEARCH_SHOES,
+        value,
     }
-  }
+}
 
 export const deleteItem = (index) => {
     return {
-        type:DELETE_ITEM,
+        type: DELETE_ITEM,
         index
     }
 }
@@ -49,6 +49,6 @@ export const deleteItem = (index) => {
 export const fetchData = () => {
     return (dispatch) => {
         return axios.get('/data.json')
-        .then((response) => dispatch(receiveData(response.data.products)))
+            .then((response) => dispatch(receiveData(response.data.products)))
     }
 }

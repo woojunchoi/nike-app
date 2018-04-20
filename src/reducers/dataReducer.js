@@ -23,13 +23,13 @@ const data_reducer = (state = initialState, action) => {
         case actions.SEARCH_SHOES:
             // start with base case so list of all breeds is returned if search value is blank.
             let filtered = state.data.slice();
-            const valueReg = new RegExp(action.value);
+            const valueReg = new RegExp(action.value.toLowerCase());
             console.log(valueReg)
             if (action.value.trim() !== '') {
                 // Find in or store to cache of previous search results
                 if (state.searchCache[action.value]) filtered = state.searchCache[action.value];
                 else {
-                    filtered = state.data.filter(el => el.name.match(valueReg));
+                    filtered = state.data.filter(el => el.name.toLowerCase().match(valueReg));
                     state.searchCache[action.value] = filtered;
                 }
             }
