@@ -1,0 +1,13 @@
+.item-image {
+    width:100%;
+    height:auto;
+}
+.eachitem {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.eachitem div{
+    text-align:center;
+}
