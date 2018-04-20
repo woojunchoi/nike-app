@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .site-header {
     background-color:black;
     box-sizing:border-box;
@@ -16,9 +19,9 @@
     color:white;
 }
 
-
 @media only screen and (max-width: 760px) {
-    .nike-logo {
-        visibility: hidden;
+    .logowrapper {
+        display:flex;
+        justify-content: center;
     }
 }

@@ -1,0 +1,17 @@
+
+.banner {
+    width:85%;
+    height:85%;
+}
+
+.search {
+    margin-top:15px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group {
+    width:50%;
+}
+

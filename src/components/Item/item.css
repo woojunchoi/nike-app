@@ -11,3 +11,13 @@
 .eachitem div{
     text-align:center;
 }
+.content-name {
+    margin-bottom:0;
+}
+.button-container {
+    border:2px solid black;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px; 
+    cursor:pointer;  
+    margin-bottom:10px;
+}

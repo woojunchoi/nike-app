@@ -11,12 +11,13 @@ const data_reducer = (state = initialState, action) => {
             return Object.assign({},state, {
                 data:action.data
             })
-    //     case data_actions.ADD_CART:
-    //         let cart = state.addedItems.slice()
-    //         cart.push(state.data[action.index])
-    //         return Object.assign({}, state, {
-    //             addedItems:cart,
-    //         })
+        case actions.ADD_CART:
+            let cart = state.addedItems.slice()
+            cart.push(state.data[action.index])
+            console.log(action.index)
+            return Object.assign({}, state, {
+                addedItems:cart,
+            })
     //     case data_actions.CHANGE_BORDER:
     //         return Object.assign({}, state, {
     //         currentItem:action.index

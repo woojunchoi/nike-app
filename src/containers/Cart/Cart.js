@@ -8,6 +8,12 @@ class Item extends Component {
 }
 
   render() {
+    // let boxClass = ['item-inside'];
+    // let buttonClass = ['button']
+    // if(this.props.currentItem == this.props.index) {
+    //   boxClass.push('blue');
+    //   buttonClass.push('blue')
+    // }
     return(
       <div className='col-md-4 eachitem' id={this.props.index}>
         <div className ='image-container'>
