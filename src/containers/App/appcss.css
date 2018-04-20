@@ -4,6 +4,7 @@ body {
 .site-header {
     background-color:black;
     box-sizing:border-box;
+    width:100%;
 }
 .nike-logo {
     height:40px;
