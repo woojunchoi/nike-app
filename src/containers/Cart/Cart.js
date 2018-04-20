@@ -77,7 +77,7 @@ class Cart extends Component {
                 <p>${price}</p>
               </div>
               <div className='button-tong'>
-                <div className='backbutton'>Shop</div>
+                <Link to='/'><div className='backbutton'>Shop</div></Link>
                 <div className='backbutton'>Check Out</div>
               </div>
             </div>
