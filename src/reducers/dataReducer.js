@@ -44,12 +44,12 @@ const data_reducer = (state = initialState, action) => {
         //         return Object.assign({}, state, {
         //             cartPage:!state.cartPage
         //             })
-        //     case data_actions.DELETE_ITEM:
-        //         let addeditem = state.addedItems.slice()
-        //         addeditem.splice(action.index, 1)
-        //         return Object.assign({},state, {
-        //             addedItems:addeditem
-        //             })
+            case actions.DELETE_ITEM:
+                let addeditem = state.addedItems.slice()
+                addeditem.splice(action.index, 1)
+                return Object.assign({},state, {
+                    addedItems:addeditem
+                    })
         default:
             return state;
     }

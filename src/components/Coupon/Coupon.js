@@ -25,9 +25,6 @@ class Coupon extends Component {
                             <h1 class="card-title pricing-card-title">$35 <small class="text-muted">Discount</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Enjoy $35 discount</li>
-                                <li>Enjoy $35 discount</li>
-                                <li>Enjoy $35 discount</li>
-                                <li>Enjoy $35 discount</li>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-dark" disabled>EZ3535</button>
                         </div>
@@ -37,9 +34,6 @@ class Coupon extends Component {
                             <h1 class="card-title pricing-card-title">Free Shipping</h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Enjoy Free Shipping</li>
-                                <li>Enjoy Free Shipping</li>
-                                <li>Enjoy Free Shipping</li>
-                                <li>Enjoy Free Shipping</li>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-dark" disabled>FREESHOOTING</button>
                         </div>
@@ -48,9 +42,6 @@ class Coupon extends Component {
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$15 <small class="text-muted">Discount</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>ENJOY $15 discount</li>
-                                <li>ENJOY $15 discount</li>
-                                <li>ENJOY $15 discount</li>
                                 <li>ENJOY $15 discount</li>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-dark" disabled>BABYDC</button>

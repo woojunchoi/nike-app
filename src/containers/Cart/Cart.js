@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import css from './Cart.css';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import * as shopping_action from '../../actions/data_action'
 
 
 
