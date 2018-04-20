@@ -45,7 +45,7 @@ class Cart extends Component {
                                 <p>{this.props.addedItems[i].name}</p>
                                 <i id={i} onClick={(e) => this.props.deleteItem(e)} className="fa fa-close"></i>
                             </div>
-                            <p>${this.props.addedItems[i].price}</p>
+                            <p>${this.props.addedItems[i].price}&ensp;&nbsp;</p>
                         </div>
                     </div>
                     )
@@ -59,9 +59,9 @@ class Cart extends Component {
             <div className='container d-flex flex-column flex-md-row justify-content-around'>
                 <div className='logowrapper'><img className='nike-logo' src='nike.jpg'/></div>
                 <Link to='/'><div className="py-2 d-none d-md-inline-block" > Product</div></Link>
-                <Link to='/cart'><div className="py-2 d-none d-md-inline-block" > Cart</div></Link>
-                <a className="py-2 d-none d-md-inline-block" href='#'> Coupon</a> 
-                <a className="py-2 d-none d-md-inline-block" href='#'> Login</a> 
+                <Link to='/'><div className="py-2 d-none d-md-inline-block"> Coupon</div></Link>
+                <Link to='/cart'><div className="py-2 d-none d-md-inline-block"> Cart</div></Link>
+                <Link to='/'><div className="py-2 d-none d-md-inline-block"> Login</div></Link>
             </div>
             </nav>
             <div className='cart-page'>

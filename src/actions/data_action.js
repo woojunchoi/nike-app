@@ -7,6 +7,8 @@ export const ADD_CART ='ADD_CART'
 export const CHANGE_BORDER ='CHANGE_BORDER'
 export const CHANGE_VIEW ='CHANGE_VIEW'
 export const DELETE_ITEM ='DELETE_ITEM'
+export const SEARCH_SHOES = 'SEARCH_SHOES';
+
 
 //actions
 export const receiveData = (data) => {
@@ -28,12 +30,13 @@ export const addCart = (index) => {
         index
     }
 }
-export const changeBorder = (index) => {
+
+export const searchShoes = (value) => {
     return {
-        type:CHANGE_BORDER,
-        index
+      type: SEARCH_SHOES,
+      value,
     }
-}
+  }
 
 export const deleteItem = (index) => {
     return {
