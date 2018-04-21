@@ -9,9 +9,9 @@ import { BrowserRouter } from 'react-router-dom'
 render(
     // wrap the App in the Provider and pass in the store
     <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
             <Starter />
-        </BrowserRouter>
+        </HashRouter>
     </Provider>
     , document.getElementById('container')
 );
