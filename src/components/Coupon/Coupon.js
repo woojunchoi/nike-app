@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import css from './Coupon.css'
+import Footer from '../Footer/Footer'
+
 
 class Coupon extends Component {
     constructor(props) {
@@ -48,6 +50,7 @@ class Coupon extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import css from "./Cart.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer"
 import * as shopping_action from "../../actions/data_action";
 
 const mapStateToProps = store => ({
@@ -96,6 +97,7 @@ class Cart extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

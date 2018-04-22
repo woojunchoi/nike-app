@@ -1,7 +1,17 @@
 .footer {
     background-color:black;
-    color:white;
     display:none;
+}
+
+
+.col-6 {
+    text-align:center;
+    color:#999;
+    padding:10px;
+    cursor:pointer;
+}
+.col-6:hover {
+    color:white;
 }
 
 @media only screen and (max-width: 760px) {

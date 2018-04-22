@@ -1,14 +1,4 @@
-/* default : desktop mode */
-.cart-modal {
-    display: none; /* Hidden by default */
-    width:100%;
-    height:100%;
-    position:absolute;
-    z-index:10;
-    font-family:'Lato';
-    font-size:20px;
-    color:black;	
-}
+
 
 .cart-page {
     margin-top:30px;

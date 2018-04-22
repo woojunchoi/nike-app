@@ -11,19 +11,17 @@ class Footer extends Component {
       <div className="footer">
         <footer className="container">
           <div className="row">
-            <div className="col-12 col-md">
+            <div className="col-6 col-md">
+              Product
             </div>
             <div className="col-6 col-md">
-              <h5>Navigation</h5>
+              Cart
             </div>
             <div className="col-6 col-md">
-              <h5>Resources</h5>
+              Coupon
             </div>
             <div className="col-6 col-md">
-              <h5>Resources</h5>
-            </div>
-            <div className="col-6 col-md">
-              <h5>About</h5>
+              Login
             </div>
           </div>
         </footer>
