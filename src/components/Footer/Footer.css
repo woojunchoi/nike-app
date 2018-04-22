@@ -1,0 +1,11 @@
+.footer {
+    background-color:black;
+    color:white;
+    display:none;
+}
+
+@media only screen and (max-width: 760px) {
+    .footer {
+        display:block;
+    }
+}
