@@ -12,7 +12,6 @@ class Footer extends Component {
         <footer className="container">
           <div className="row">
             <div className="col-12 col-md">
-            <img className="nike-logo" src="nike.jpg" />
             </div>
             <div className="col-6 col-md">
               <h5>Navigation</h5>
