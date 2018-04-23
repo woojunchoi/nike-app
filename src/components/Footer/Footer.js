@@ -13,16 +13,16 @@ class Footer extends Component {
       <div className="footer">
         <footer className="container">
           <div className="row">
-            <Link to='/'><div className="col-6 col-md">
+            <Link to='/' className="col-6 col-md"><div>
               Product
             </div></Link>
-            <Link to='/cart'><div className="col-6 col-md">
+            <Link to='/cart' className="col-6 col-md"><div>
               Cart
             </div></Link>
-            <Link to='/coupon'><div className="col-6 col-md">
+            <Link to='/coupon' className="col-6 col-md"><div>
               Coupon
             </div></Link>
-            <Link to='/'><div className="col-6 col-md">
+            <Link to='/' className="col-6 col-md"><div>
               Login
             </div></Link>
           </div>
