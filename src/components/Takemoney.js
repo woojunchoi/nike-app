@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios"
+import { Redirect } from "react-router-dom";
 
 
 
@@ -74,6 +75,10 @@ class Cards extends Component {
     }
 
     render() {
+        if(this.state.loading && !this.state.stripeLoading) {
+           return(<Redirect to='/success'/>)
+
+        }
         const { stripeLoading, loading } = this.state;
         return (
             <div>

@@ -42,7 +42,7 @@ app.get('/data.json', ((req, res) => {
 app.post('/gettoken',(req,res) => {
   const price = req.body.price
   const email = req.body.email;
-
+  console.log(req.body)
   stripe.customers.create({
     email: email,
     source: req.body.stripeToken
@@ -53,10 +53,26 @@ app.post('/gettoken',(req,res) => {
     description: 'Nike Shoes',
     currency: 'usd',
     customer: customer.id
-  })).then(charge => res.render('Success'));
+  })).then(charge => res.redirect('/#/success'));
 })
 
+const coupon153 = stripe.coupons.create({
+  duration: 'once',
+  id: 'EZ3535',
+  percent_off: 15
+});
 
+const coupon15 = stripe.coupons.create({
+  duration: 'once',
+  id: 'FREESHOOTING',
+  amount_off: 15
+});
+
+const coupon35 = stripe.coupons.create({
+  duration: 'once',
+  id: 'BABYDC',
+  amount_off: 15
+});
 /**
  * Listen to Port
  */
