@@ -36,9 +36,12 @@
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-stripe-elements": "^1.6.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
+    "scriptly": "0.0.8",
+    "stripe": "^5.8.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0"

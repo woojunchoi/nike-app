@@ -4,6 +4,8 @@ import { Route } from "react-router-dom";
 import App from './App/App'
 import Cart from './Cart/Cart'
 import Coupon from '../components/Coupon/Coupon'
+import {Elements} from 'react-stripe-elements';
+
 
 class Starter extends Component {
     constructor(props) {

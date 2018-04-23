@@ -16,7 +16,6 @@ const data_reducer = (state = initialState, action) => {
         case actions.ADD_CART:
             let cart = state.addedItems.slice()
             cart.push(state.data[action.index])
-            console.log(action.index)
             return Object.assign({}, state, {
                 addedItems: cart,
             })

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import css from "./Cart.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer";
+import Takemoney from "../../components/Takemoney"
 import * as shopping_action from "../../actions/data_action";
 
 const mapStateToProps = store => ({
@@ -21,7 +22,6 @@ class Cart extends Component {
 
   render() {
     //change class name based on the state
-    console.log(this.props.addedItems);
     let cartContent = [];
     let price = 0;
     //default: in case cart is empty
@@ -92,7 +92,8 @@ class Cart extends Component {
                 <Link to="/">
                   <div className="backbutton">Shop</div>
                 </Link>
-                <div className="backbutton">Check Out</div>
+                <div className="backbutton"><Takemoney price={price}/>
+                </div>
               </div>
             </div>
           </div>

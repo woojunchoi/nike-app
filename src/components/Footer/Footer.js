@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import css from "./Footer.css"
+import { Link } from "react-router-dom";
+
 
 class Footer extends Component {
   constructor(props) {
@@ -11,18 +13,18 @@ class Footer extends Component {
       <div className="footer">
         <footer className="container">
           <div className="row">
-            <div className="col-6 col-md">
+            <Link to='/'><div className="col-6 col-md">
               Product
-            </div>
-            <div className="col-6 col-md">
+            </div></Link>
+            <Link to='/cart'><div className="col-6 col-md">
               Cart
-            </div>
-            <div className="col-6 col-md">
+            </div></Link>
+            <Link to='/coupon'><div className="col-6 col-md">
               Coupon
-            </div>
-            <div className="col-6 col-md">
+            </div></Link>
+            <Link to='/'><div className="col-6 col-md">
               Login
-            </div>
+            </div></Link>
           </div>
         </footer>
       </div>
