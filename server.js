@@ -7,7 +7,7 @@ const webpackConfig = require('./webpack.config.js');
 const compiler = webpack(webpackConfig);
 
 const stripe = require("stripe")(
-  "pk_test_70MtLXBhCT7AK7iMzXqxdtEC"
+  "sk_test_2t14hooA7bPXlUxKDcoWxHEm"
 );
 
 // define port
@@ -40,34 +40,20 @@ app.get('/data.json', ((req, res) => {
 }))
 
 app.post('/gettoken',(req,res) => {
-  console.log(req.body)
-  res.send('babo')
-})
-app.post('/charge',(req, res) => {
-  // const token = req.body.stripeToken; // Using Express
-  // const price = req.body.price; // Using Express
-  console.log(req.body)
-  res.send('TEST')
-  // const charge = stripe.charges.create({
-  //   amount: price,
-  //   currency: 'usd',
-  //   description: 'Example charge',
-  //   source: token,
+  const price = req.body.price
+  const email = req.body.email;
 
-  // const amount = 2500;
-  
-  // stripe.customers.create({
-  //   email: req.body.stripeEmail,
-  //   source: req.body.stripeToken
-  // })
-  // .then(customer => stripe.charges.create({
-  //   amount,
-  //   description: 'Web Development Ebook',
-  //   currency: 'usd',
-  //   customer: customer.id
-  // }))
-  // .then(charge => res.render('success'));
-  // });
+  stripe.customers.create({
+    email: email,
+    source: req.body.stripeToken
+  })
+  .then(customer => 
+    stripe.charges.create({
+    amount: price,
+    description: 'Nike Shoes',
+    currency: 'usd',
+    customer: customer.id
+  })).then(charge => res.render('Success'));
 })
 
 

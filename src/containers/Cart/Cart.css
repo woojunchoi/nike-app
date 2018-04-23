@@ -44,7 +44,11 @@
     border-radius: 5px;
     cursor:pointer;
     display:inline-block;
-    margin-left:20px;
+    margin-left:10px;
+    text-decoration: none;
+}
+.backbutton:hover {
+    color:black;
 }
 .button-tong {
     width:60%;
@@ -109,5 +113,8 @@
     }
     .total {
         width:350px;
+    }
+    .backbutton {
+        display:block;
     }
 }

@@ -33,14 +33,17 @@ class Cards extends Component {
     componentDidMount() {
         this.loadStripe(() => {
             this.stripeHandler = window.StripeCheckout.configure({
-                key: 'pk_test_70MtLXBhCT7AK7iMzXqxdtEC',
+                key: 'pk_test_rzohQi2ZqlGOj6eh9kLw419t',
                 image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
                 locale: 'auto',
                 token: (token) => {
+                    console.log(token)
                     this.setState({ loading: true });
                     // use fetch or some other AJAX library here if you dont want to use axios
                     axios.post('/gettoken', {
                         stripeToken: token.id,
+                        price:parseInt(this.props.price+'00'),
+                        stripeEmail: token.email
                     });
                 }
             });
@@ -63,8 +66,9 @@ class Cards extends Component {
         this.stripeHandler.open({
             name: 'Pay with credit card',
             description: 'info',
-            panelLabel: 'Update Credit Card',
-            allowRememberMe: false,
+            panelLabel: `Pay`,
+            amount: parseInt(this.props.price+'00'),
+            allowRememberMe: true
         });
         e.preventDefault();
     }
@@ -74,8 +78,8 @@ class Cards extends Component {
         return (
             <div>
                 {(loading || stripeLoading)
-                    ? <div>Add CC</div>
-                    : <div onClick={this.onStripeUpdate}>Add CC</div>
+                    ? <div>Check Out</div>
+                    : <div onClick={this.onStripeUpdate}>Check Out</div>
                 }
             </div>
         );

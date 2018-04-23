@@ -1,0 +1,26 @@
+
+import React, { Component } from 'react';
+
+
+class Success extends Component {
+    constructor() {
+        super();
+    }
+
+    render() {
+        return (
+            <div>
+                <section class="py-5">
+                    <h1 class="display-3">
+                        Thank You
+                    </h1>
+                    <p class="lead">Your Ebook should be emailed to you within 1 business day</p>
+                    <a href="/" class="btn btn-dark btn-lg">Go Back Home</a>
+                </section>
+            </div>
+        );
+    }
+};
+
+
+export default Success
