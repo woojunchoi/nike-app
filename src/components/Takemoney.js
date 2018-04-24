@@ -35,7 +35,7 @@ class Cards extends Component {
         this.loadStripe(() => {
             this.stripeHandler = window.StripeCheckout.configure({
                 key: 'pk_test_rzohQi2ZqlGOj6eh9kLw419t',
-                image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+                image: 'nike.jpg',
                 locale: 'auto',
                 token: (token) => {
                     console.log(token)
@@ -66,7 +66,7 @@ class Cards extends Component {
     onStripeUpdate(e) {
         this.stripeHandler.open({
             name: 'Pay with credit card',
-            description: 'info',
+            description: 'Nike Shoes',
             panelLabel: `Pay`,
             amount: parseInt(this.props.price+'00'),
             allowRememberMe: true
@@ -76,7 +76,7 @@ class Cards extends Component {
 
     render() {
         if(this.state.loading && !this.state.stripeLoading) {
-           return(<Redirect to='/success'/>)
+           return <Redirect to='/success'/>
 
         }
         const { stripeLoading, loading } = this.state;

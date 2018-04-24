@@ -71,6 +71,7 @@ const coupon15 = stripe.coupons.create({
 const coupon35 = stripe.coupons.create({
   duration: 'once',
   id: 'BABYDC',
+  currency: 'used',
   amount_off: 15
 });
 /**
