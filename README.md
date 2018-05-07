@@ -1,4 +1,4 @@
-# Nike Shopping Application
+# Nike Shoes Sales Website
 
 ## Front End Technologies:</br>ReactJS, Redux, JavaScript, HTML5, CSS3, Bootstrap, Stripe.js
 ## Back End Technologies:</br>NodeJS, Express
