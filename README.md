@@ -29,6 +29,8 @@
 </a>
 
 ##### DEMO IMAGE: 
-![alt text](/newmain.png "Shopping Cart")
+![alt text](/apparel1.png "Main page")
 
-![alt text](/cartmodal.png "Cart")
+![alt text](/apparel2.png "Payment")
+
+![alt text](/apparel3.png "Coupon")
